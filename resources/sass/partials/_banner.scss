@@ -1,0 +1,33 @@
+section.banner {
+    background-color: $dc_blue;
+
+    .container {
+        display: flex;
+        padding: 30px 0;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            width: 20%;
+            color: inherit;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            img {
+                max-width: 20%;
+                max-height: 50px;
+            }
+
+            h3 {
+                margin-left: 10px;
+                text-transform: uppercase;
+                font-weight: 400;
+                font-size: 0.9em;
+            }
+        }
+    }
+}

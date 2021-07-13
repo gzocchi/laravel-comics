@@ -1,0 +1,273 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+header {
+  height: 80px;
+  background-color: #fff;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div a.logo {
+  height: 100%;
+  padding: 10px 0;
+}
+
+header div a.logo img {
+  height: 100%;
+}
+
+header div ul {
+  display: flex;
+  height: 100%;
+  list-style: none;
+}
+
+header div ul li {
+  height: 100%;
+  line-height: 80px;
+}
+
+header div ul li:not(:first-child) {
+  margin-left: 15px;
+}
+
+header div ul li a {
+  height: 100%;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-bottom: 4px solid transparent;
+  color: #1c1c1c;
+}
+
+header div ul li a.active {
+  border-bottom: 4px solid #0282f9;
+  color: #0282f9;
+}
+
+header div ul li a:hover:not(.active) {
+  color: #0282f9;
+}
+
+main {
+  background-color: #1c1c1c;
+}
+
+main .jumbotron {
+  height: 300px;
+  background-image: url("/img/jumbotron.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main > .container {
+  position: relative;
+}
+
+main > .container h1 {
+  position: absolute;
+  left: 0;
+  transform: translateY(-50%);
+  padding: 10px 20px;
+  background-color: #0282f9;
+  text-transform: uppercase;
+}
+
+main > .container #gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0 20px;
+  text-transform: uppercase;
+}
+
+main > .container #gallery a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main > .container #gallery .gallery_card {
+  flex-shrink: 0;
+  width: calc(100% / 6);
+  padding: 10px;
+}
+
+main > .container #gallery .gallery_card p {
+  margin: 10px 0;
+  font-size: 0.9em;
+}
+
+main > .container #gallery .btn {
+  padding: 10px 50px;
+  margin: 10px auto 0;
+  background-color: #0282f9;
+  font-weight: 700;
+}
+
+div.card {
+  max-height: 200px;
+  overflow: hidden;
+}
+
+div.card img {
+  width: 100%;
+}
+
+section.banner {
+  background-color: #0282f9;
+}
+
+section.banner .container {
+  display: flex;
+  padding: 30px 0;
+}
+
+section.banner .container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 20%;
+  color: inherit;
+}
+
+section.banner .container a:hover {
+  text-decoration: underline;
+}
+
+section.banner .container a img {
+  max-width: 20%;
+  max-height: 50px;
+}
+
+section.banner .container a h3 {
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+footer section.footer_link {
+  background-image: url(/img/footer-bg.jpg);
+  background-position: top;
+  background-size: cover;
+  height: 300px;
+}
+
+footer section.footer_link .container {
+  display: flex;
+  justify-content: space-between;
+  background-image: url("/img/dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+footer section.footer_link .container div.list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 40%;
+  padding: 10px 0;
+}
+
+footer section.footer_link .container div.list .list_block {
+  padding: 10px;
+  padding-left: 0;
+}
+
+footer section.footer_link .container div.list .list_block h3 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+footer section.footer_link .container div.list .list_block ul {
+  list-style: none;
+}
+
+footer section.footer_link .container div.list .list_block a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+footer section.footer_link .container div.list .list_block a:hover {
+  text-decoration: underline;
+}
+
+footer section.follow {
+  padding: 20px;
+  background-color: rgba(28, 28, 28, 0.9);
+  font-weight: 700;
+}
+
+footer section.follow .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer section.follow .container .sign_up {
+  display: flex;
+  align-items: center;
+}
+
+footer section.follow .container .sign_up a {
+  padding: 5px 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  border: 2px solid #0282f9;
+}
+
+footer section.follow .container .sign_up a:hover {
+  background-color: #fff;
+  color: #0282f9;
+}
+
+footer section.follow .container .social {
+  display: flex;
+  align-items: center;
+}
+
+footer section.follow .container .social a {
+  margin-left: 10px;
+}
+
+footer section.follow .container .social a:first-child {
+  padding: 5px 10px;
+  border: 2px solid transparent;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #0282f9;
+}
+
+footer section.follow .container .social a:first-child:hover {
+  background-color: #fff;
+  border: 2px solid #0282f9;
+}
+
+footer section.follow .container .social a img {
+  height: 100%;
+}
+
