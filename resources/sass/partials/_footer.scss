@@ -1,13 +1,12 @@
 footer {
     section.footer_link {
-        background-image: url(/img/footer-bg.jpg);
+        background-image: url("/img/footer-bg.jpg");
         background-position: top;
         background-size: cover;
         height: 300px;
 
         .container {
             display: flex;
-            justify-content: space-between;
             background-image: url("/img/dc-logo-bg.png");
             background-repeat: no-repeat;
             background-position: right;
@@ -40,6 +39,17 @@ footer {
                             text-decoration: underline;
                         }
                     }
+                }
+            }
+        }
+        .cookie {
+            p {
+                font-size: 0.9em;
+                color: rgba($text_color, 0.5);
+
+                a {
+                    text-decoration: none;
+                    color: $dc_blue;
                 }
             }
         }

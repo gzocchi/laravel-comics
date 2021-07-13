@@ -17,41 +17,61 @@ body {
 }
 
 header {
-  height: 80px;
+  height: 100px;
   background-color: #fff;
 }
 
-header div {
+header div.top {
+  height: 20px;
+  background-color: #0282f9;
+}
+
+header div.top .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
-header div a.logo {
+header div.top a {
+  margin-left: 40px;
+  font-size: 0.8em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+header div.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100% - 20px);
+}
+
+header div.bottom a.logo {
   height: 100%;
   padding: 10px 0;
 }
 
-header div a.logo img {
+header div.bottom a.logo img {
   height: 100%;
 }
 
-header div ul {
+header div.bottom ul {
   display: flex;
   height: 100%;
   list-style: none;
 }
 
-header div ul li {
+header div.bottom ul li {
   height: 100%;
   line-height: 80px;
 }
 
-header div ul li:not(:first-child) {
+header div.bottom ul li:not(:first-child) {
   margin-left: 15px;
 }
 
-header div ul li a {
+header div.bottom ul li a {
   height: 100%;
   display: inline-block;
   text-decoration: none;
@@ -61,12 +81,13 @@ header div ul li a {
   color: #1c1c1c;
 }
 
-header div ul li a.active {
+header div.bottom ul li a.active {
   border-bottom: 4px solid #0282f9;
   color: #0282f9;
 }
 
-header div ul li a:hover:not(.active) {
+header div.bottom ul li a:hover:not(.active),
+header div.bottom ul li a i {
   color: #0282f9;
 }
 
@@ -169,7 +190,7 @@ section.banner .container a h3 {
 }
 
 footer section.footer_link {
-  background-image: url(/img/footer-bg.jpg);
+  background-image: url("/img/footer-bg.jpg");
   background-position: top;
   background-size: cover;
   height: 300px;
@@ -177,7 +198,6 @@ footer section.footer_link {
 
 footer section.footer_link .container {
   display: flex;
-  justify-content: space-between;
   background-image: url("/img/dc-logo-bg.png");
   background-repeat: no-repeat;
   background-position: right;
@@ -214,6 +234,16 @@ footer section.footer_link .container div.list .list_block a {
 
 footer section.footer_link .container div.list .list_block a:hover {
   text-decoration: underline;
+}
+
+footer section.footer_link .cookie p {
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+footer section.footer_link .cookie p a {
+  text-decoration: none;
+  color: #0282f9;
 }
 
 footer section.follow {
